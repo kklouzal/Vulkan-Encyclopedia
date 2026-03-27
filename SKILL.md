@@ -1,17 +1,18 @@
 ---
 name: vulkan-encyclopedia
 description: >-
-  Vulkan documentation-first workflow for Vulkan API-specific questions,
-  specification lookup, command/structure review, synchronization reasoning,
-  pipeline/resource setup, extension/feature checks, validation-error triage,
-  and live code review in a Vulkan context. Use when the request is clearly
-  about Vulkan itself: Vulkan API usage, Vk* types or vk* commands, VUIDs,
-  instance/device/swapchain setup, queues, command buffers, synchronization,
-  descriptors, render passes or dynamic rendering, pipelines, shaders in a
-  Vulkan pipeline context, SPIR-V in a Vulkan context, or extension/feature
-  behavior. Do not use for generic graphics programming, OpenGL, Direct3D,
-  Metal, CUDA, generic shader-language questions, or engine-level rendering
-  questions unless the Vulkan API layer is materially involved.
+  Vulkan specification/reference workflow for Vulkan-API-specific questions,
+  exact command and structure semantics, valid-usage and VUID lookup,
+  synchronization reasoning, pipeline/resource setup, extension/feature
+  checks, limits/formats/capabilities review, and code review in a Vulkan API
+  context. Use when the request is clearly about Vulkan itself: `Vk*` types,
+  `vk*` commands, VUIDs, instance/physical-device/logical-device setup,
+  swapchains, queues, command buffers, descriptors, render passes or dynamic
+  rendering, pipelines, memory/resources, synchronization, SPIR-V in a Vulkan
+  pipeline context, or extension/feature behavior. Do not use for generic
+  graphics programming, engine-level rendering design, shader-language-only
+  questions, OpenGL, Direct3D, Metal, CUDA, or generic shader authoring
+  unless the Vulkan API/spec layer is materially involved.
 metadata: {"openclaw":{"emoji":"🌋","homepage":"https://docs.vulkan.org/spec/latest/index.html"}}
 ---
 
@@ -19,14 +20,16 @@ metadata: {"openclaw":{"emoji":"🌋","homepage":"https://docs.vulkan.org/spec/l
 
 ## Overview
 
-Use a docs-first workflow for Vulkan work. Prefer the official Vulkan specification at `https://docs.vulkan.org/spec/latest/index.html`, consult cached local copies under `.Vulkan-Encyclopedia/` before re-fetching, and record useful authoritative excerpts plus environment-specific operational learnings so future work gets faster, safer, and more grounded.
+Use a docs-first workflow for Vulkan work. Prefer the official Vulkan specification/reference docs at `https://docs.vulkan.org/spec/latest/index.html`, consult cached local copies under `.Vulkan-Encyclopedia/` before re-fetching, and record useful authoritative excerpts plus environment-specific operational learnings so future work gets faster, safer, and more grounded.
+
+This skill is for the **Vulkan API/spec layer**, not for generic rendering theory and not for standalone shader-language questions unless they are being asked in direct service of Vulkan API behavior.
 
 ## Workflow
 
 1. **Classify the task**
    - Decide whether the task is a Vulkan API question, specification lookup, code-review task, validation/debugging task, architecture/design task, or live implementation task.
-   - Use this skill when the task materially depends on Vulkan API semantics, Vulkan object/command structure, extension/feature behavior, synchronization rules, pipeline/resource behavior, or validation/spec interpretation.
-   - Do not use this skill for generic graphics concepts unless the Vulkan layer is actually in play.
+   - Use this skill when the task materially depends on Vulkan API semantics, Vulkan object/command structure, extension/feature behavior, synchronization rules, limits/capabilities/formats, or validation/spec interpretation.
+   - Do not use this skill for generic graphics concepts, standalone shader-language work, or engine-level rendering discussion unless the Vulkan API/spec layer is actually in play.
 
 2. **Check local cache first**
    - Use `.Vulkan-Encyclopedia/` as the local knowledge/cache root.
