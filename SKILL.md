@@ -46,6 +46,7 @@ This skill is for the **Vulkan API/spec layer**, not for generic rendering theor
      - exact member names, allowed states, or command rules matter
      - synchronization or resource-lifetime behavior is easy to misremember
      - the task involves VUID interpretation, extension/feature enabling, or pipeline/resource correctness
+   - If the problem is really about GLSL syntax/qualifiers/stage interfaces rather than Vulkan API semantics, prefer the GLSL skill instead of stretching this one.
    - Do not improvise fragile Vulkan answers from memory when the spec is easy to check.
 
 4. **Cache consulted docs locally**
